@@ -1,6 +1,3 @@
-package trivia;
-
-import CadenaMayusMinus.*;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -31,6 +28,8 @@ public class Servidor {
                 os.start();
             }
         }
-        catch(IOException e){}
+        catch(IOException e){
+            System.out.println("Exception: "+e);
+        }
     }
 }

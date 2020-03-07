@@ -1,5 +1,3 @@
-package trivia;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -32,7 +30,7 @@ public class OperacionesServidor extends Thread{
         try {
             convertir();
         } catch (IOException ex) {
-            Logger.getLogger(OperacionesServidor.class.getName()).log(Level.SEVERE, null, ex);
+        	System.out.println("Exception: "+ex);
         }
     }
 
